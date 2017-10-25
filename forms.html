@@ -8,20 +8,36 @@
 </head>
 <body>
     <p>Forms</p>
-        
-        <form method="POST" action="">
-            <lable> Name:
-                <input type="text" name="username" 
-                placehholder="Your name"> 
-            </lable>  
-                <br>
-        <lable for="age">Age:</lable>
-                <input type="number" id="age" name="userage">
-        <lable>
-                <input type="password" name="userpassword" requred >
-        </lable>
-                <input type="submit"/>
-                <input type="reset"/>
-        </form>    
+    <form method="POST" action="https://formspree.io/andriyhischynskyy@gmail.com">
+        <input hidden type="text" value="secret" name="secret">
+        <br>
+        <label>Male:
+            <input type="radio" value="male" name="gender" checked>
+        </label>
+        <br>
+        <label>Female:
+            <input type="radio" value="female" name="gender">
+        </label>
+        <br>
+        <label>Other: 
+            <input type="radio" value="other" name="gender">
+        </label>
+        <br>
+        <label>Name: 
+            <input type="text" name="user-name" required>
+        </label>
+        <br>
+        <label for="age">Age: </label>
+            <input id="age" type="number" name="user-age" 
+            value="20" min="12" max="150">
+        <br>
+        <label>Password:     
+            <input type="password" name="user-password" required 
+            placeholder="Your password" pattern="[A-Z]{1}[a-z]{7}[!@#$%^&*]{1}"
+            title="One capital letter, seven lower letter, one special character">
+        </label>
+        <input type="submit" value="Send">
+        <input type="reset">
+    </form>
 </body>
 </html>

@@ -7,45 +7,61 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1">
+    <table border="1" style="border-collapse: collapse;">
         <tr>
-            <th></th> <th>Quarter1</th>   <th>Quarter2</th> <th>Quarter3</th> <th rowspan="5">Sales</th>           
-        </tr>    
-        
+            <th></th><th>Quarter1</th><th>Quarter2</th><th>Quarter3</th>
+            <th rowspan="5">Sales</th>
+        </tr>
         <tr>
-            <th>Product1</th> <td>1</td> <td>2</td> <td>3</td>         
-        </tr>  
-        
+            <th>Product1</th><td>1</td><td>2</td><td>3</td>
+        </tr>
         <tr>
-            <th>Product2</th> <td>4</td> <td>5</td> <td>6</td>         
-        </tr>    
-        
+            <th>Product2</th><td>4</td><td>5</td><td>6</td>
+        </tr>
         <tr>
-            <th>Product3</th> <td>7</td>  <td>8</td> <td>9</td>         
-        </tr>    
-        
-        
+            <th>Product3</th><td>7</td><td>8</td><td>9</td>
+        </tr>
         <tr>
-            <th>Total</th> <td colspan= "3" >Sum</td>
-        </tr> 
-    </table>   
-    
-    <ol>
-        <li>Item1 1</li>
-        <li>Item1 2</li>
-        <li>Item1 3</li>
+            <th>Totals</th><td colspan="3">Sum</td>
+        </tr>
+    </table>
+    <p>Lists:</p>
+    <ol  start="10">
+        <li> More items
+            <ol type="A">
+                <li>ItemX
+                    <ol reversed type="a">
+                        <li>Detail1</li>
+                        <li>Detail2</li>
+                        <li>Detail3</li>
+                    </ol>                
+                </li>
+                <li>ItemY</li>
+                <li>ItemZ</li>
+            </ol>
+        </li>
+        <li>Item2</li>
+        <li>Item3</li>
     </ol>
     
-    <ul type= "circle">
-        <li>Item1 1</li>
-        <li>       
-            <ul>  
-                <li>1</li>
-                <li>2</li>    
-            </ul>    
+    <ul type="disc">
+        <li> More items
+            <ul>
+                <li>ItemX
+                    <ul>
+                        <li>Detail1</li>
+                        <li>Detail2</li>
+                        <li>Detail3</li>
+                    </ul>                
+                </li>
+                <li>ItemY</li>
+                <li>ItemZ</li>
+            </ul>
         </li>
-        <li>Item1 3</li>
+        <li>Item2</li>
+        <li>Item3</li>
+    </ul>  
+    <a href="forms.html">Forms</a>
     
-        <a href = "forms.html"> Forms</a>
 </body>
 </html>
